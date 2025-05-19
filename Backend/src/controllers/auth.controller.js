@@ -75,7 +75,7 @@ export const signup = async (req, res) => {
       message: "User created successfully",
     });
   } catch (error) {
-    console.log("Error in signup controller", error.message);
+    console.log("Error in signup controller", error);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
@@ -115,7 +115,7 @@ export const login = async (req, res) => {
       message: "User created successfully",
     });
   } catch (error) {
-    console.log("Error in login controller", error.message);
+    console.log("Error in login controller", error);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
