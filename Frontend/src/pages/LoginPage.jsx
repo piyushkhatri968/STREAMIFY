@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { ShipWheel } from "lucide-react";
 import { Link } from "react-router";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { login } from "../lib/api.js";
 import useLogin from "../hooks/useLogin.js";
 
 const LoginPage = () => {

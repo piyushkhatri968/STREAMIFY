@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://streamify-sigma-six.vercel.app"],
+    origin: "https://streamify-sigma-six.vercel.app",
     credentials: true,
   })
 );
