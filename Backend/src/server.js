@@ -6,9 +6,11 @@ import { connectDb } from "./lib/db.js";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+connectDb();
+
 app.use(
   cors({
-    origin: "https://streamify-sigma-six.vercel.app",
+    origin: ["http://localhost:5173", "https://streamify-sigma-six.vercel.app"],
     credentials: true,
   })
 );
@@ -31,5 +33,4 @@ app.use("/api/chat", chatRoutes);
 
 app.listen(PORT, () => {
   console.log("Server is running on the port:", PORT);
-  connectDb();
 });
