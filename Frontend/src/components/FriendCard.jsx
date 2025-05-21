@@ -39,6 +39,9 @@ export function getLanguageFlag(language) {
   const langLower = language.toLowerCase();
   const countryCode = LANGUAGE_TO_FLAG[langLower];
   if (countryCode) {
+    console.log(langLower)
+    console.log(countryCode)
+    
     return (
       <img
         src={`https://flagcdn.com/24x18/${countryCode}.png`}
