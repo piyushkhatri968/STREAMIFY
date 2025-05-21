@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="text-center p-3 bg-base-300 mt-1">
+    <div className="text-center p-3 bg-base-300 mt-1 text-xs sm:text-sm">
       Design and Developed by{" "}
       <a
         href="https://piyushkhatri.vercel.app/"
