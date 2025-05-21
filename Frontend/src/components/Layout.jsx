@@ -1,5 +1,6 @@
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Layout = ({ children, showSidebar = false }) => {
   return (
@@ -11,6 +12,7 @@ const Layout = ({ children, showSidebar = false }) => {
           <main className="flex-1 overflow-y-auto">{children}</main>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
