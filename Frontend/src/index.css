@@ -16,7 +16,7 @@
   height: 80% !important;
   margin: 0 auto !important;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 
@@ -31,4 +31,35 @@
 
 .str-chat__message-input {
   border-top: 1px solid #ddd;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1024px) {
+  .str-chat__container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .str-chat__container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .str-chat__container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .str-chat__container {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .str-chat__container {
+    max-width: 320px;
+  }
 }
