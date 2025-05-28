@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --theme-color: #6b4f3b; /* fallback color (e.g. coffee theme) */
+}
+
 .str-chat__channel {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, #c9e8c9, #b7e7bb);
+  /* background: linear-gradient(to bottom, #c9e8c9, #b7e7bb); */
+  background: var(--theme-color);
   height: 100%;
 }
 
